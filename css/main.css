@@ -1,5 +1,5 @@
 header {
-    height: 325px;
+    height: 100px;
     width: 100%;
 }
 aside {
@@ -8,6 +8,9 @@ aside {
 body {
     margin: 60px auto;
     width: 70%;
+}
+nav {
+   display: inline;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
