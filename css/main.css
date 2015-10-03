@@ -3,10 +3,12 @@ body {
     width: 70%;
 }
 section{
-    float: right
+    float: left
+    width: 85%
 }
 aside {
-    float: left
+    float: right
+    width: 10%
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
