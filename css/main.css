@@ -1,15 +1,15 @@
 body {
     margin: 60px auto;
-    width: 60%;
+    width: 200px;
 }
 section{
     float: left
-    width: 10%
+    width: 80px
 }
 aside {
     display: relative
     float: right
-    width: 10%
+    width: 20px
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
