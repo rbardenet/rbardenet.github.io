@@ -1,10 +1,10 @@
 body {
     margin: 60px auto;
-    width: 80%;
+    width: 60%;
 }
 section{
     float: left
-    width: 40%
+    width: 10%
 }
 aside {
     float: right
