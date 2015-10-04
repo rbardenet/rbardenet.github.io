@@ -16,6 +16,7 @@ article {
     font-size: .8em;
     float: left;
     width: 65%;
+    padding-left:20px;
 }
 aside {
     padding: 2%;
@@ -57,7 +58,12 @@ p {
     color: #333;
 }
 footer {
+    text-align: center;
+    width: 100%;
     font-size: .8em;
+    left: 0;
+    bottom: 0;
+    position: absolute;
 }
 
 ul.posts { 
