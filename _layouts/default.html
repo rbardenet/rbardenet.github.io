@@ -4,7 +4,27 @@
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
+                        <script src="https://maps.googleapis.com/maps/api/js"></script>
+		        <script>
+                            function initialize() {
+                                var mapCanvas =	document.getElementById('map');
+                                var myLatLng = {lat: 50.606809, lng: 3.137091};
+                                var mapOptions = {
+                                    center: myLatLng,
+                                    zoom: 15,
+                                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                                };
+                                var map = new google.maps.Map(mapCanvas, mapOptions)
+                                var marker = new google.maps.Marker({
+                                    position: myLatLng,
+                                    map: map,
+                                    title: 'Here I am!'
+                                });
+                                }
+                             google.maps.event.addDomListener(window, 'load', initialize);
+                         </script>
+
+                </head>
 		<body>
                         <header>
 			<nav>

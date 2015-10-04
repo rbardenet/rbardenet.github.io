@@ -7,6 +7,10 @@ body {
     margin: 2px auto;
     width: 90%;
 }
+#map {
+    width: 250px;
+    height: 180px;
+}
 section {
     font-size: .75em;
     float: left;
