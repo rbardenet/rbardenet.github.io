@@ -25,6 +25,9 @@ article {
 article ul li {
     font-size: 1.3em;
 }
+ul li {
+    padding: 5px 0px;
+}
 li.menu-item {
    margin:0 0 10px 0;   
 }
