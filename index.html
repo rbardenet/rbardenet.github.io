@@ -88,61 +88,21 @@
                         <span class="name"><a href="http://www.cnrs.fr/index.php"> CNRS</a> junior permanent researcher</span>
                         <hr class="star-light">
                         <span class="skills">
+                            Computational statistics, machine learning, signal processing, and applications to natural sciences
+                        </span>
+                        <!--
+                             <span class="skills">
 Team <a href="http://www.cristal.univ-lille.fr/?rubrique29&eid=30">
 	                          SigMA</a> of <a href="http://www.cristal.univ-lille.fr/?lang=en"> CRIStAL</a>, University of Lille, France.
- </span>
+     </span>
+   -->
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Portfolio Grid Section -->
-    <section class="success" id="cv">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>CV</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>
-                        Click <a href="/pdf/cvFull_bardenet.pdf"> here</a> for a detailed CV, with track
-	                      record and complete list of publications.
-                    </p>
-                    <p> 
-                        In a nutshell, I obtained my Ph.D. in November 2012 from <a
-                                                                                     href="http://www.u-psud.fr/en/"> University
-                        Paris-Sud</a>, France, working with <a href="https://users.lal.in2p3.fr/kegl/">
-	                      Bal&aacute;zs K&eacute;gl</a> on Monte Carlo methods and
-                        Bayesian optimization, applied to particle
-                        physics and machine learning. In particular, I was a member of the <a
-                                                                                               href="http://www.auger.org"> Pierre Auger</a>
-                        collaboration.
-                    </p>
-                </div>
-                <div class="col-lg-4">
-                    <p> Then I joined <a href="http://www.stats.ox.ac.uk/~cholmes">
-                        Chris Holmes's</a> group at the University
-                        of Oxford, UK, to work as a postdoc on Markov chain Monte Carlo for tall
-                        data. Since then, I am also working on applications to
-                        computational biology within the <a
-                                                             href="http://www.2020science.net"> 2020 science</a> network,
-                        of which I am now an emeritus fellow.
-                    </p>
-                    <p>
-                        I started at <a href="www.cnrs.fr"> CNRS</a> in February 2015,
-                        joining <a href="http://www.cristal.univ-lille.fr"> CRIStAL</a>
-                        at the University of Lille, France.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Grid Section -->
+    <!-- Research Section -->
     <section id="research">
         <div class="container">
             <div class="row">
@@ -152,18 +112,20 @@ Team <a href="http://www.cristal.univ-lille.fr/?rubrique29&eid=30">
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>My research interests include Monte Carlo methods, probabilistic modelling, machine learning, and applications to signal processing, physics, and biology. </p>
-                </div>
-                <div class="col-lg-4">
-                    <p>Since October 2016, I am the PI of ANR starting grant BoB on "Bayesian statistics for expensive models and tall data".</p>
+                <div class="col-lg-6 col-lg-offset-0">
+                    <p>Monte Carlo methods are numerical integration methods that are frequently needed in Bayesian inference. I am interested in <strong>making Monte Carlo scale to expensive-to-evaluate integrands</strong>. Like many natural scientists, my collaborators in <strong>cardiac cell biology</strong> often face this issue, as evaluating the integrand once means approximately solving large sets of differential equations that describe the system under study. This line of research has brought me to study <strong>determinantal point processes</strong>, a distribution over configurations of points that show repulsiveness while being statistically tractable. 
+
+                        </div>
+                <div class="col-lg-6">
+                    <p>I am also trying to <strong>make Monte Carlo scale to inference with tall datasets</strong>: today's data deluge involves working with datasets containing a large number of items, which frequentist statisticians classically tackle with stochastic gradient. I am looking for the Monte Carlo equivalent of stochastic gradient, which would unlock big data applications of Bayesian inference. It is a <a href="https://arxiv.org/abs/1505.02827">hot topic</a>, as Bayesian inference provides the uncertainty quantification astrophysicists of medical scientists need. This line of research has also triggered my interest in <strong>concentration inequalities</strong>. </p>
+
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="success" id="publications">
+    <section id="publications">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -172,15 +134,59 @@ Team <a href="http://www.cristal.univ-lille.fr/?rubrique29&eid=30">
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Click <a href="">here</a> for a HaL-generated list of my scientific publications.</p>
+                <div class="col-lg-6 col-lg-offset-0">
+                    <p>I maintain this <a href="http://haltools.archives-ouvertes.fr/Public/afficheRequetePubli.php?auteur_exp=rbardenet&CB_auteur=oui&CB_titre=oui&CB_article=non&CB_Resume_court=non&CB_typdoc=oui&CB_vignette=non&langue=Anglais&tri_exp=annee_publi&tri_exp2=typdoc&tri_exp3=date_publi&&ordre_aff=TA&Fen=Aff&css=../css/VisuCondenseSsCadre.css">list</a> that is extracted from the HaL database. You can also find me on <a href="https://scholar.google.com/citations?user=Nj74Gv4AAAAJ&hl=en">Google Scholar</a>.</p>
                 </div>
-                <div class="col-lg-4">
-                    <p>Publication habits differ in statistics, computer science, physics, and biology, see my <a href="PDFs/cvFull_bardenet.pdf"> CV</a> for details.</p>
+                <div class="col-lg-6">
+                    <p>Publication habits differ in statistics, computer science, physics, and biology, see my <a href="pdf/cvFull_bardenet.pdf">CV</a> for details.</p>
                 </div>
             </div>
         </div>
     </section>
+
+
+    <!-- Portfolio Grid Section -->
+    <section id="cv">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>CV</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-0">
+                    <p>
+                        Click <a href="pdf/cvFull_bardenet.pdf">here</a> for a detailed CV, with track
+	                      record and complete list of publications.
+                    </p>
+                    <p> 
+                        In a nutshell, I obtained my Ph.D. in November 2012 from <a
+                        href="http://www.u-psud.fr/en/">University
+                        Paris-Sud</a>, France, working with <a href="https://users.lal.in2p3.fr/kegl/">Bal&aacute;zs K&eacute;gl</a> on Monte Carlo methods and
+                        Bayesian optimization, applied to particle
+                        physics and machine learning. In particular, I was a member of the <a href="http://www.auger.org">Pierre Auger</a>
+                        collaboration.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <p> Then I joined <a href="http://www.stats.ox.ac.uk/~cholmes">Chris Holmes's</a> group at the University
+                        of Oxford, UK, to work as a postdoc on Markov chain Monte Carlo for tall
+                        data. Since then, I am also working on applications to
+                        computational biology within the <a href="http://www.2020science.net">2020 science</a> network,
+                        of which I am now an emeritus fellow.
+                    </p>
+                    <p>
+                        I started at <a href="www.cnrs.fr">CNRS</a> in February 2015,
+                        joining team <a href="http://sigma.univ-lille1.fr/dating-data-intelligence-group-sigma">SigMA</a> of <a href="http://www.cristal.univ-lille.fr">CRIStAL</a>
+                        at the University of Lille, France.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- Contact Section -->
     <section id="contact">
