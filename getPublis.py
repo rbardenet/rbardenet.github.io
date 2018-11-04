@@ -8,7 +8,23 @@ with open("publis.html",'wb') as fout:
         # give the right address to css files
         if "../css" in strLine:
             strLine = strLine.replace("../css", "css")
-        
+
+        # Erase abstract
+        queryStart = "<dt class=\"ChampRes\">Resume_court</dt>"
+        queryStop = "</dd>"
+        tic = strLine.find(queryStart)
+        toc = strLine.find(queryStop)
+        abstract = strLine[tic:toc+len(queryStop)]
+        strLine = strLine.replace(abstract, '')
+
+        # Erase document type
+        queryStart = "<dt class=\"ChampRes\">typdoc</dt>"
+        queryStop = "</dd>"
+        tic = strLine.find(queryStart)
+        toc = strLine.find(queryStop)
+        abstract = strLine[tic:toc+len(queryStop)]
+        strLine = strLine.replace(abstract, '')
+
         # find Auger author lists and shorten them
         queryStart = "class=\"ValeurRes Auteurs\">"
         queryStop = "</dd>\n<dt class=\"ChampRes\">article"
