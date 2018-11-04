@@ -17,6 +17,14 @@ with open("publis.html",'wb') as fout:
         abstract = strLine[tic:toc+len(queryStop)]
         strLine = strLine.replace(abstract, '')
 
+        # make my name bold
+        for query in ["R. Bardenet", "Rémi Bardenet"]:
+            tic = strLine.find(query)
+            toc = tic + len(query)
+            name = strLine[tic:toc]
+            if not tic == -1:
+                strLine = strLine.replace(name, "<b>"+name+"</b>")
+
         # Erase document type
         queryStart = "<dt class=\"ChampRes\">typdoc</dt>"
         queryStop = "</dd>"
