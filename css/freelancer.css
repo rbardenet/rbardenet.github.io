@@ -9,7 +9,10 @@ body {
 }
 p {
   font-size: 20px;
-} 
+}
+ul li{
+ font-size:20px;
+}
 p.small {
   font-size: 16px;
 }
@@ -521,4 +524,3 @@ fieldset[disabled] .btn-success.active {
   opacity: 0;
   display: none;
 }
-
